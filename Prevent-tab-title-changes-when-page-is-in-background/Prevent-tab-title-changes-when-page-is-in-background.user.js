@@ -2,15 +2,15 @@
 // @name        Prevent tab title changes when page is in background
 // @namespace   https://github.com/SylwesterZarebski/UserScripts
 // @grant       none
-// @version     1.0.0
+// @version     1.0.1
 // @author      Sylwester Zarębski
 // @copyright   2021, Sylwester Zarębski (https://github.com/SylwesterZarebski)
 // @license     CC-BY-NC-SA-4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 // @license     GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
-// @homepage    https://github.com/SylwesterZarebski/UserScripts/tree/master/Prevent-tab-title-changes-when-page-is-in-background
-// @homepageURL https://github.com/SylwesterZarebski/UserScripts/tree/master/Prevent-tab-title-changes-when-page-is-in-background
-// @downloadURL https://github.com/SylwesterZarebski/UserScripts/raw/master/Prevent-tab-title-changes-when-page-is-in-background/Prevent-tab-title-changes-when-page-is-in-background.user.js
-// @updateURL   https://github.com/SylwesterZarebski/UserScripts/raw/master/Prevent-tab-title-changes-when-page-is-in-background/Prevent-tab-title-changes-when-page-is-in-background.user.js
+// @homepage    https://github.com/SylwesterZarebski/UserScripts/tree/main/Prevent-tab-title-changes-when-page-is-in-background
+// @homepageURL https://github.com/SylwesterZarebski/UserScripts/tree/main/Prevent-tab-title-changes-when-page-is-in-background
+// @downloadURL https://raw.githubusercontent.com/SylwesterZarebski/UserScripts/main/Prevent-tab-title-changes-when-page-is-in-background/Prevent-tab-title-changes-when-page-is-in-background.user.js
+// @updateURL   https://raw.githubusercontent.com/SylwesterZarebski/UserScripts/main/Prevent-tab-title-changes-when-page-is-in-background/Prevent-tab-title-changes-when-page-is-in-background.user.js
 // @supportURL  https://github.com/SylwesterZarebski/UserScripts/issues
 // @include http://*/*
 // @include https://*/*
