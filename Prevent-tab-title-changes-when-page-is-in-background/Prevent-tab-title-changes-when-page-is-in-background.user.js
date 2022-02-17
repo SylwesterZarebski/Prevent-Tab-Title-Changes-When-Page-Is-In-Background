@@ -2,7 +2,7 @@
 // @name        Prevent tab title changes when page is in background
 // @namespace   https://github.com/SylwesterZarebski/UserScripts
 // @grant       none
-// @version     1.0.1
+// @version     1.0.2
 // @author      Sylwester Zarębski
 // @copyright   2021, Sylwester Zarębski (https://github.com/SylwesterZarebski)
 // @license     CC-BY-NC-SA-4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
@@ -29,21 +29,23 @@
     titleSet = true;
   }, false);
 
-  new MutationObserver(function(mutations) {
-    // Return if already in observer
-    if (inEvent || !titleSet)
-      return;
-    // Set inside observer
-    inEvent = true;
-    // Read new title
-    let titleNew = mutations[0].target.text;
-    // If new title is different than old, then reset to previous, except when this script sets loading title
-    if (title != titleNew)
-      document.title = title;
-    // Reset lock
-    inEvent = false;
-  }).observe(
-    document.querySelector('title'),
-    { subtree: true, characterData: true, childList: true }
-  );
+  if (document.querySelector('title') != null) {
+    new MutationObserver(function(mutations) {
+      // Return if already in observer
+      if (inEvent || !titleSet)
+        return;
+      // Set inside observer
+      inEvent = true;
+      // Read new title
+      let titleNew = mutations[0].target.text;
+      // If new title is different than old, then reset to previous, except when this script sets loading title
+      if (title != titleNew)
+        document.title = title;
+      // Reset lock
+      inEvent = false;
+    }).observe(
+      document.querySelector('title'),
+      { subtree: true, characterData: true, childList: true }
+    );
+  }
 })();
